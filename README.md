@@ -2,7 +2,7 @@
 
 ## 소프트웨어 선정 기준
 ### 1.Django
-Long-Term Support(LTS) 4.2 버전을 사용해서 안정성을 도모하고 최근 API 책을 공부했던 Django 버전이 4.0 버전이어서 선정.
+안정적 버전인 3.2 LTS를 사용. 회사 DB가 MariaDB인데 Django 4.2 LTS버전은 현재 DB 버전과 호환이 되지 않음.
 ![image](https://github.com/knockinthecave/Jcast-company-website/assets/98227391/75b2c876-566b-46e4-9424-ba5ff07fe8ca)
 
 ### 2.React.js
