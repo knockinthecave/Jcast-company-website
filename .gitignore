@@ -186,7 +186,7 @@ psd
 thumb
 sketch
 
-# db secrets
+# db settings file for local development
 db_settings.py
 
 # End of https://www.toptal.com/developers/gitignore/api/django,react
