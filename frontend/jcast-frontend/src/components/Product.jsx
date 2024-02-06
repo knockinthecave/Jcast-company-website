@@ -76,19 +76,21 @@ const Product = () => {
   );
 
   return (
-    <div className="product-list-container">
-      <h1 style={{ textDecoration: 'underline' }}>제품소개</h1>
-      <div className="product-table">
-        <div>
-          <h2>MES</h2>
-          {renderProductTable(MESProducts)}
-        </div>
-        <div>
-          <h2>AI Solutions</h2>
-          {renderProductTable(AIProducts)}
-        </div>
-      </div>
-    </div>
+     <section id="product">
+       <div className="product-list-container">
+         <h1 style={{ textDecoration: 'underline' }}>제품소개</h1>
+           <div className="product-table">
+           <div>
+             <h2>MES</h2>
+             {renderProductTable(MESProducts)}
+           </div>
+           <div>
+             <h2>AI Solutions</h2>
+             {renderProductTable(AIProducts)}
+           </div>
+           </div>
+         </div>
+     </section>
   );
 };
 
