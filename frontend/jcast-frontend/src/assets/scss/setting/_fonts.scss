@@ -1,16 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
 
-@font-face {
-     font-family: 'JalnanGothic';
-     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
-     font-weight: normal;
-     font-style: normal;
+ .noto-sans-kr {
+     font-family: 'Noto Sans KR', sans-serif;
  }
+
+ @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
 
  .black-han-sans {
      font-family: 'Black Han Sans', sans-serif;
- }
-
- .jalnan-gothic {
-     font-family: 'JalnanGothic', sans-serif;
  }

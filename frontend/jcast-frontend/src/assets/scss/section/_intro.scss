@@ -1,0 +1,25 @@
+$primary-color: white; // 색상을 변수로 설정
+$text-size: 60px; // 텍스트 크기를 변수로 설정
+
+.intro__image-container {
+  position: relative;
+  text-align: center;
+  color: $primary-color;
+
+  .intro__blur-image {
+    filter: blur(8px);
+    width: 100%;
+    height: auto;
+  }
+
+  .intro__text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $primary-color;
+    font-size: $text-size;
+
+    // SCSS를 사용하여 여기에 추가 스타일을 중첩할 수 있음
+  }
+}
