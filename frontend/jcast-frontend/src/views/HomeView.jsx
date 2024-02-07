@@ -7,14 +7,14 @@ import Product from "../components/Product";
 
 const HomeView = () => {
      return (
-     <>
+     <React.Fragment>
        <Header />
        <Main>
           <Intro />
           <Product />
        </Main>
        <Footer />
-     </>
+     </React.Fragment>
      );
 };
 
