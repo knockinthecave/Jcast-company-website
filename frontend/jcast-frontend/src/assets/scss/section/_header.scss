@@ -1,14 +1,15 @@
 #header {
      @include position-fixed;
      z-index: 10000;
-     font-family: 'Black Han Sans', sans-serif;
+     font-family: 'TheJamsil5Bold';
 }
  .header__inner {
      @include flex-between;
      background-color: rgb(255, 255, 255);
      backdrop-filter: blur(15px);
      padding: 1rem;
-     
+     padding-right: 75px;
+     border-bottom: 1px solid #ccc; /* light gray border */
  
      .header__logo img {
           height: 60px;

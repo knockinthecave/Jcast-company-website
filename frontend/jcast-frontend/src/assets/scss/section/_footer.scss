@@ -1,103 +1,47 @@
 #footer {
-     font-family: 'Noto Sans KR', sans-serif;
- }
- .footer__inner {
-     padding: 16px;
- 
-     .footer__text {
-         font-size: 12px;
-         text-transform: uppercase;
-         border-top: 1px solid var(--black);
-         border-bottom: 1px solid var(--black);
-         display: flex;
-         justify-content: space-between;
-     }
-     .footer__info {
-         display: flex;
-         justify-content: space-between;
-         margin: 100px 0;
- 
-         @media (max-width: 800px){
-             flex-direction: column;
-         }
- 
-         .left {
-             width: 40%;
- 
-             @media (max-width: 800px){
-                 width: 100%;
-             }
- 
-             .title {
-                 border-top: 2px solid var(--black);
-                 border-bottom: 1px solid var(--black);
-                 padding: 20px 0;
-                 text-transform: uppercase;
-                 font-weight: 700;
+    background-color: #191F28;
+}
 
-                 transition: all 0.3s;
- 
-                 &:hover {
-                     background-color: var(--black400);
-                     padding-left: 10px;
-                     border-color: transparent;  
-                 }
-             }
-             .desc {
-                 font-size: 12px;
-                 padding-top: 20px;
- 
-                 @media (max-width: 800px){
-                     margin-bottom: 40px;
-                 }
-             }
-         }
- 
-         .right {
-             width: 50%;
- 
-             @media (max-width: 800px){
-                 width: 100%;
-             }
- 
-             h3 {
-                 border-top: 2px solid var(--black);
-                 font-size: 10px;
-                 margin-bottom: 40px;
-                 padding-top: 10px;
-             }
-             ul {
-                 border-top: 1px solid var(--black);
- 
-                 li {
-                     border-bottom: 1px solid var(--black);
- 
-                     a {
-                         padding: 14px 0;
-                         font-size: 14px;
-                         display: inline-block;
-                         text-transform: uppercase;
-                     }
-                     em {
-                         font-size: 12px;
-                         padding-left: 10px;
-                         opacity: 0;
-                         transition: all 0.3s;
-                     }
- 
-                     &:hover {
-                         em {
-                             opacity: 1;
-                         }
-                     }
-                 }
-             }
-         }
-     }
-     .footer__right {
-         text-align: center;
-         text-transform: uppercase;
-         font-size: 12px;
-         margin-bottom: 20px;
-     }
- }
+#footer__inner {
+    /* Your existing styles for layout */
+    @font-face {
+        font-family: 'LINESeedKR-Bd';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'LINESeedKR';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+
+.footer__content {
+    text-align: left;
+    padding: 80px 250px; /* Adjust as necessary */
+    /* Additional styles as necessary */
+}
+
+.footer__company-name {
+    font-weight: bold;
+    margin: 0;
+    padding-top: 20px; /* Adjust as necessary */
+    font-size: 16px;
+    font-family: 'LINESeedKR-Bd';
+    color: #B0B8C1;
+}
+
+.footer__registration,
+.footer__representative,
+.footer__address {
+    margin: 0;
+    padding: 5px 0; /* Spacing between lines, adjust as necessary */
+    font-family: 'LINESeedKR';
+    font-size: 12px;
+    color: #b0b8c18f;
+}
+
+/* You may want to add media queries if you need responsiveness */

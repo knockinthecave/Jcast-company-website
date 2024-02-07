@@ -1,5 +1,19 @@
 $primary-color: #ffffff; // 색상을 변수로 설정
-$text-size: 30px; // 텍스트 크기를 변수로 설정
+$text-size: 28px; // 텍스트 크기를 변수로 설정
+
+@font-face {
+  font-family: 'JalnanGothic';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#intro {
+  font-family: 'JalnanGothic';
+  min-height: 400px;
+  position: relative;
+  overflow: hidden;
+}
 
 .intro__image-container {
   position: relative;
@@ -7,7 +21,7 @@ $text-size: 30px; // 텍스트 크기를 변수로 설정
   color: $primary-color;
 
   .intro__blur-image {
-    filter: blur(12px);
+    filter: blur(20px);
     width: 100%;
     height: auto;
   }
