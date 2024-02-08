@@ -6,9 +6,8 @@
 - react(https://ko.legacy.reactjs.org/) 를 사용하여 사이트를 번들링하고 관리합니다.
 - gsap(https://greensock.com/gsap) 를 이용하여 패럴랙스 효과를 줍니다.
 - lenis(https://lenis.studiofreight.com/) 를 이용하여 스므스 효과를 구현합니다.
-- netlify(https://www.netlify.com/) 를 통해 사이트를 배포합니다.
 - git(https://github.com/) 을 사용하여 파일을 관리합니다.
-- HTML, CSS 기반으로 웹사이트의 기본 레이아웃 설계하고, 웹 표준 및 웹 접근성을 준수하여 작업합니다. [ARIA(Accessible Rich Internet Applications)](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles)
+- docker(https://www.docker.com/)을 사용하여 프로젝트 관리 및 배포합니다.
 
 ## 프로젝트 실행
 - react 설치. `npx create-react-app 리액트앱명`
@@ -16,3 +15,16 @@
 - sass 설치. `npm install sass`
 - gsap 설치. `npm install gsap`
 - lenis 설치. `npm install@studio-freight/lenis`
+
+## 프로젝트 배포
+`Synology NAS`에서 `Docker`를 이용해 배포.
+
+1.`Synology NAS`로 `react-app` 전송
+2. 개발 혹은 작성한 `react-app`의 `root`디렉토리에 `Dockerfile` 작성
+3. `Dockerfile`을 통해서 `docker buildx build . -t your-image-name:your-tag` 명령어를 통해 이미지 빌드
+4. `docker save -o <path-for-tar>/your-image-name.tar your-image-name:your-tag` 명령어를 통해 `Docker 이미지`를 `.tar`파일로 `Export`
+5. `Synology NAS`로 `.tar`파일 전송
+6. `Docker GUI`에서 `Docker 이미지`를 추가 및 생성
+7. `Docker 이미지`에서 `Container`만들기
+    cf) 포트 설정은 내부포트를 설정하고 볼륨같은 경우에는 React 앱의 경우 정적이기 때문에 설정하지 않음.
+8. `Container`실행 후 웹브라우저에 `NAS IP 주소`와 `PORT번호`를 입력하여 액세스하면 배포 완료
