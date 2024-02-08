@@ -19,12 +19,12 @@
 ## 프로젝트 배포
 `Synology NAS`에서 `Docker`를 이용해 배포.
 
-1.`Synology NAS`로 `react-app` 전송.
-2. 개발 혹은 작성한 `react-app`의 `root`디렉토리에 `Dockerfile` 작성.
-3. `Dockerfile`을 통해서 `docker buildx build . -t your-image-name:your-tag` 명령어를 통해 이미지 빌드.
-4. `docker save -o <path-for-tar>/your-image-name.tar your-image-name:your-tag` 명령어를 통해 `Docker 이미지`를 `.tar`파일로 `Export`.
-5. `Synology NAS`로 `.tar`파일 전송.
-6. `Docker GUI`에서 `Docker 이미지`를 추가 및 생성.
-7. `Docker 이미지`에서 `Container`만들기.
-    cf) 포트 설정은 내부포트를 설정하고 볼륨같은 경우에는 React 앱의 경우 정적이기 때문에 설정하지 않음.
-8. `Container`실행 후 웹브라우저에 `NAS IP 주소`와 `PORT번호`를 입력하여 액세스하면 배포 완료.
+1.`Synology NAS`로 `react-app` 전송. <br/>
+2. 개발 혹은 작성한 `react-app`의 `root`디렉토리에 `Dockerfile` 작성. <br/>
+3. `Dockerfile`을 통해서 `docker buildx build . -t your-image-name:your-tag` 명령어를 통해 이미지 빌드. <br/>
+4. `docker save -o <path-for-tar>/your-image-name.tar your-image-name:your-tag` 명령어를 통해 `Docker 이미지`를 `.tar`파일로 `Export`. <br/>
+5. `Synology NAS`로 `.tar`파일 전송. <br/>
+6. `Docker GUI`에서 `Docker 이미지`를 추가 및 생성. <br/>
+7. `Docker 이미지`에서 `Container`만들기. <br/>
+    cf) 포트 설정은 내부포트를 설정하고 볼륨같은 경우에는 React 앱의 경우 정적이기 때문에 설정하지 않음. <br/>
+8. `Container`실행 후 웹브라우저에 `NAS IP 주소`와 `PORT번호`를 입력하여 액세스하면 배포 완료. <br/>
