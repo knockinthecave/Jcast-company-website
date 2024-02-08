@@ -190,6 +190,7 @@ sketch
 db_settings.py
 
 # Dockerfile and .tar
-Dockerfile
+#Dockerfile
+
 *.tar
 # End of https://www.toptal.com/developers/gitignore/api/django,react
