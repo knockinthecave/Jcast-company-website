@@ -14,29 +14,19 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
 
 const Product = () => {
-  //const MESProducts = [
-    //{
-    //   id: 1,
-    //   name: 'MES Product 1',
-    //   title1: 'Subheading 1',
-    //   title2: 'Subheading 2',
-    //   content1: 'Content 1',
-    //   content2: 'Content 2',
-    //   img1: 'Image 1 URL',
-    //   img2: 'Image 2 URL'
-    // },
-    // {
-    //   id: 2,
-    //   name: 'MES Product 2',
-    //   title1: 'Subheading 1',
-    //   title2: 'Subheading 2',
-    //   content1: 'Content 1',
-    //   content2: 'Content 2',
-    //   img1: 'Image 1 URL',
-    //   img2: 'Image 2 URL'
-    // },
-    // Add more MES products as needed
-  //];
+  const MESProducts = [
+    {
+       id: 1,
+       name: 'MES Product 1',
+       title1: 'Subheading 1',
+       title2: 'Subheading 2',
+       content1: 'Content 1',
+       content2: 'Content 2',
+       img1: 'Image 1 URL',
+       img2: 'Image 2 URL'
+     },
+     //Add more MES products as needed
+  ];
 
   const AIProducts = [
     {
