@@ -1,6 +1,9 @@
 import React from 'react';
 
 // img
+import MonthlyPrice from '../assets/img/pricetag/monthly-price.png';
+import QuarterlyPrice from '../assets/img/pricetag/quarterly-price.png';
+import YearlyPrice from '../assets/img/pricetag/yearly-price.png';
 
 import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
@@ -9,13 +12,18 @@ const ProductPrice = () => {
      const PriceTags = [
           {
                id: 1,
-               name: 'example1',
-               img: 'Image 1 URL'
+               name: '월 기준',
+               img: MonthlyPrice
           },
           {
                id: 2,
-               name: 'example2',
-               img: 'Image 2 URL'
+               name: '6개월 기준',
+               img: QuarterlyPrice
+          },
+          {
+               id: 3,
+               name: '연 기준',
+               img: YearlyPrice
           },
      ];
 
@@ -26,11 +34,17 @@ const ProductPrice = () => {
                     <section id="product-price">
                          <div className="product-price-container">
                               <h2 className="product-price-head-title">제품단가</h2>
-                              {PriceTags.map((tag, key) => (
-                                   <div key={key} className="product-price-item" style={{ marginBottom: '20px' }}>
-                                        <img src={tag.img} alt={tag.name} />
+                              {PriceTags.map((tag) => (
+                                   <div key={tag.id} className="product-price-item" style={{ marginBottom: '20px' }}>
+                                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
+                                             <h2 className="product-price-name">{tag.id}. {tag.name}</h2>
+                                        </div>
+                                        <div className="product-price-images">
+                                             <img src={tag.img} alt="Price Tag" style={{ width: '110%', height: 'auto' }} />
+                                        </div>
                                    </div>
                               ))}
+                              <h4 style={{ marginTop: '20px', marginBottom: '20px' }}>※ 그 외 시스템 및 솔루션에 관해서는 문의 바랍니다.</h4>
                          </div>
                     </section>
                </Container>
