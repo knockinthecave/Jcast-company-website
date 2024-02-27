@@ -21,12 +21,33 @@
      padding-top: 150px;
    }
 
+   #product-price .images {
+    padding-bottom: 15px;
+  }
+
+  #product-price .product-price-head-title {
+    padding-left: 50px;
+    padding-right: 10px;
+    font-size: 50px;
+    width: 300px;
+    padding-bottom: 80px;
+    background-color: #0d459fd5;
+    border-radius: 20px; 
+    color: white;
+    padding: 10px 20px; 
+    display: inline-block; 
+    margin-bottom: 100px; 
+    text-align: center;
+  }
+
       /* Responsive table */
       @media screen and (max-width: 600px) {
           #product-price .product-price-table {
             width: 100%;
           }
         }
+
+        
         
 
    // reference
