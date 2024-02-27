@@ -40,7 +40,7 @@ const ProductPrice = () => {
                                              <h2 className="product-price-name">{tag.id}. {tag.name}</h2>
                                         </div>
                                         <div className="product-price-images">
-                                             <img src={tag.img} alt="Price Tag" style={{ width: '110%', height: 'auto' }} />
+                                             <img src={tag.img} alt="Price Tag" style={{ width: '110%', height: 'auto',  paddingBottom: '30px' }} />
                                         </div>
                                    </div>
                               ))}
