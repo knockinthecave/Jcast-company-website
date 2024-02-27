@@ -10,6 +10,10 @@ const headerNav = [
           title: "제품소개",
           url: "#product",
      },
+     {
+          title: "제품단가",
+          url: "#product-price",
+     }
 ];
 
 const Header = () => {
