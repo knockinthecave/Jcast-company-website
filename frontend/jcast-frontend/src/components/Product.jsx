@@ -10,6 +10,8 @@ import AgedMeatCapture from '../assets/img/product/aged_meat_management_capture.
 import InjectionProcessFlow from '../assets/img/product/injection_process_judgement_flow.png';
 import InjectionProcessCapture from '../assets/img/product/injection_process_judgement_capture.png';
 import Jmes from '../assets/img/product/mes-diagram.png';
+import DataCollectProgramImg from '../assets/img/product/data-collect-program.png';
+import DashboardProgramImg from '../assets/img/product/dashboard.png';
 //
 import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
@@ -74,6 +76,24 @@ const Product = () => {
     // Add more AI solutions as needed
   ];
 
+  const DataCollectProgram = [
+    {
+      id: 1,
+      title: '데이터 수집 프로그램',
+      content1: '실시간 데이터 수집 프로그램으로 복잡한 산업 환경에서도 빠르고 정확하게 기계 및 장비 데이터를 수집, 분석하여 생산성을 극대화하고 운영 효율성을 향상시킬 수 있습니다. 수집한 데이터를 기반으로 실시간 모니터링과 고급 분석 기능을 통해 예측 정비 및 공정 최적화가 가능해지며, 이는 비용절감과 함께 제품 품질의 일관성을 보장합니다.',
+      img: DataCollectProgramImg
+    }
+  ];
+
+  const DashboardProgram = [
+    {
+      id: 1,
+      title: 'Dashboard 프로그램',
+      content1: '복잡한 데이터를 쉽게 이해할 수 있는 시각적 형태로 변환하여, 실시간으로 생산 과정과 결과를 모니터링하고 이를 통해 전략적인 인사이트를 제공합니다. 모든 관련 데이터를 중앙 집중화하여 정보에 신속하게 접근하고, 생산성을 높이며, 더 빠르고 정확한 결정을 내릴 수 있도록 지원합니다.',
+      img: DashboardProgramImg
+    }
+  ]
+
 
   return (
     <React.Fragment>
@@ -115,6 +135,30 @@ const Product = () => {
               <p className='product-content'>{product.content2}</p>
               <h3 className='product-title'>{product.title3}</h3>
               <p className='product-content'>{product.content3}</p>
+            </div>
+          </div>
+        ))}
+        <h2 className = "product-category">데이터 수집 프로그램</h2>
+        {DataCollectProgram.map((product) => (
+          <div key={product.id} className="product-item" style={{ marginBottom: '20px' }}>
+            <div className="product-images">
+              <img src={product.img} alt="DataCollectProgram" style={{ justifyContent: 'center', width: '100%', height: 'auto' }} />
+            </div>
+            <div className='product-info'>              
+              <h3 className='product-title'>{product.title1}</h3>
+              <p className='product-content'>{product.content1}</p>
+            </div>
+          </div>
+        ))}
+        <h2 className = "product-category">Dashboard 프로그램</h2>
+        {DashboardProgram.map((product) => (
+          <div key={product.id} className="product-item" style={{ marginBottom: '20px' }}>
+            <div className="product-images">
+              <img src={product.img} alt="DataCollectProgram" style={{ justifyContent: 'center', width: '100%', height: 'auto' }} />
+            </div>
+            <div className='product-info'>              
+              <h3 className='product-title'>{product.title1}</h3>
+              <p className='product-content'>{product.content1}</p>
             </div>
           </div>
         ))}
