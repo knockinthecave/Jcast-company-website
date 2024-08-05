@@ -1,0 +1,35 @@
+body {
+     font-family: 'Noto Sans KR', sans-serif;
+   }
+   
+   #product-price {
+     text-align: center;
+     margin-top: 20px;
+   }
+   
+   .product-price-head-title {
+     font-size: 200%;
+     font-weight: 700;
+     margin-bottom: 20px;
+   }
+   
+   .product-price-name {
+     font-size: 150%;
+     font-weight: 600;
+     margin-bottom: 20px;
+   }
+   
+   .product-price-container {
+     text-align: left;
+   }
+   
+   .product-price-item {
+     margin-bottom: 20px;
+   }
+   
+   .product-price-images img {
+     max-width: 80%;
+     height: auto;
+     padding-bottom: 30px;
+   }
+   

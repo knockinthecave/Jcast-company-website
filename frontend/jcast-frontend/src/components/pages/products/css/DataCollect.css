@@ -1,0 +1,52 @@
+body {
+     font-family: 'Noto Sans KR', sans-serif;
+   }
+   
+   #data-collect {
+     text-align: center;
+     margin-top: 20px;
+   }
+   
+   .product-category {
+     font-size: 3em;
+     font-weight: 700;
+     margin-bottom: 20px;
+   }
+   
+   .product-name {
+     font-size: 2em;
+     font-weight: 600;
+     margin-top: 30px;
+     margin-bottom: 20px;
+   }
+   
+   .product-title {
+     font-size: 1.5em;
+     font-weight: 500;
+     margin: 10px 0;
+   }
+   
+   .product-content {
+     font-size: 1.2em;
+     font-weight: 300;
+     margin: 5px 0 20px;
+     line-height: 1.6;
+   }
+   
+   .product-images img {
+     max-width: 100%;
+     height: auto;
+   }
+   
+   .product-list-container {
+     text-align: left;
+   }
+   
+   .product-item {
+     margin-bottom: 20px;
+   }
+   
+   .product-info {
+     margin-top: 20px;
+   }
+   

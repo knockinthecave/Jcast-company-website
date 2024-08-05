@@ -1,12 +1,13 @@
 import React from 'react';
 
 // img
-import MonthlyPrice from '../assets/img/pricetag/monthly-price.png';
-import QuarterlyPrice from '../assets/img/pricetag/quarterly-price.png';
-import YearlyPrice from '../assets/img/pricetag/yearly-price.png';
+import MonthlyPrice from './img/monthly-price.png';
+import QuarterlyPrice from './img/quarterly-price.png';
+import YearlyPrice from './img/yearly-price.png';
 
 import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
+import './css/ProductPrice.css';
 
 const ProductPrice = () => {
      const PriceTags = [
