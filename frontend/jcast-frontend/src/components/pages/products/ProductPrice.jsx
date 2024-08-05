@@ -38,7 +38,7 @@ const ProductPrice = () => {
                               {PriceTags.map((tag) => (
                                    <div key={tag.id} className="product-price-item" style={{ marginBottom: '20px' }}>
                                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
-                                             <h2 className="product-price-name">{tag.id}. {tag.name}</h2>
+                                             <h2 className="product-price-name">- {tag.name}</h2>
                                         </div>
                                         <div className="product-price-images">
                                              <img src={tag.img} alt="Price Tag" style={{ width: '110%', height: 'auto',  paddingBottom: '30px' }} />

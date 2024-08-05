@@ -9,6 +9,7 @@
      font-size: 14px;
      font-family: 'Noto Sans KR', sans-serif; /* 기본 폰트 적용 */
      font-size: 14; /* 기본 폰트 크기 조정 */
+     margin-top: 220px; /* Add top margin to the footer */
  }
  
  .footer__inner {
@@ -27,10 +28,14 @@
  .footer__company-name {
      font-weight: bold;
      font-size: 16px;
+     margin-top: 60px;
      margin-bottom: 20px;
+     color: rgb(255, 255, 255, 0.7);
  }
+
  .footer__address {
      margin-bottom: 0px;
+     color: rgb(255, 255, 255, 0.4);
  }
  
  .footer__contact {

@@ -4,10 +4,10 @@ import './css/Header.css'; // Import the CSS file
 
 const headerNav = [
     {
-        title: "회사소개",
+        title: "기업소개",
         url: "/intro",
         submenu: [
-            { title: "기업연혁", url: "/history" },
+            { title: "기업연혁", url: "/company-history" },
             { title: "CEO 인사말", url: "/ceo-message" }
         ]
     },
@@ -26,7 +26,7 @@ const headerNav = [
         title: "지속가능경영",
         url: "/sustainability",
         submenu: [
-            { title: "윤리경영소개", url: "/ethics" }
+            { title: "윤리경영소개", url: "/code-of-conduct" }
         ]
     }
 ];

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+#code-of-conduct {
+  margin-top: 20px;
+  margin-bottom: 100px; /* Add margin at the bottom of the main content */
+}
+
+.section-title {
+  font-size: 2em;
+  font-weight: 700;
+  text-align: left;
+}
+
+.section-description {
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.ethics-code-box {
+     background-color: #f2f2f2;
+     padding: 30px;
+     border-radius: 10px;
+     width: 100%;
+     margin-top: 160px;
+     border: 1px solid #ddd;
+   }
+   
+   .main-title {
+     font-size: 2em;
+     font-weight: 700;
+     text-align: center;
+     margin-bottom: 20px;
+     margin-top: 20px;
+   }
+   
+   .ethics-section {
+     margin-bottom: 40px;
+   }
+   
+   .section-title {
+     font-size: 1.5em;
+     font-weight: 600;
+     text-align: left;
+     margin-bottom: 20px;
+   }
+   
+   .ethics-list {
+     list-style-type: none;
+     padding: 0;
+     font-size: 1.2em;
+     line-height: 1.6;
+     color: rgb(0, 0, 0, 0.6);
+   }
+   
+   .ethics-list li {
+     margin-bottom: 10px;
+   }
+
