@@ -8,3 +8,8 @@
 ### 2.React.js
 이전에 모바일 웹앱을 개발하던 `React`를 그대로 사용하기로 함. 원래는 모바일 화면에 맞추는 `Flutter`를 고려하려 하였으나 시간적인 여유가 부족하기에 현재 바로 사용가능한 `React`를 선정.
 
+## - 배포
+### 1. ssh 접속을 통한 Docker Container 생성
+```
+sudo docker-compose up -d
+```
