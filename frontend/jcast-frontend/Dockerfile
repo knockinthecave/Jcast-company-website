@@ -1,13 +1,25 @@
-# Build stage
-FROM node:14 AS build
-WORKDIR /app
-COPY package.json package-lock.json ./
+# Base image
+FROM node:18
+
+# Create app directory
+WORKDIR /usr/src/app
+
+# Install app dependencies
+COPY package*.json ./
+
 RUN npm install
+
+# Install serve globally
+RUN npm install -g serve
+
+# Bundle app source
 COPY . .
+
+# Build the app
 RUN npm run build
 
-# Serve stage
-FROM nginx:stable-alpine
-COPY --from=build /app/build /usr/share/nginx/html
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+# Expose the port
+EXPOSE 5000
+
+# Run the app
+CMD ["serve", "-s", "build", "-l", "5000"]
