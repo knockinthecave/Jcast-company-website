@@ -13,3 +13,9 @@
 ```
 sudo docker-compose up -d
 ```
+
+### 2. NAS에서의 Docker 실행
+이유는 아직 찾지 못했으나 아마 ssh에서의 포트를 막아놓은듯 하다. Web Station을 통해 포트를 배정하면 된다.
+
+### 3. Docker 이미지 실행을 통한 컨테이너 생성
+이때 Web Station에서 80/443포트로 배정을 받아 바로 웹 페이지를 생성할 수 있게 해준다.
